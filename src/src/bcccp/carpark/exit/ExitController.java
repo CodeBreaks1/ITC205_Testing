@@ -1,5 +1,6 @@
 package bcccp.carpark.exit;
 
+
 import bcccp.carpark.Carpark;
 import bcccp.carpark.ICarSensor;
 import bcccp.carpark.ICarSensorResponder;
@@ -7,22 +8,26 @@ import bcccp.carpark.ICarpark;
 import bcccp.carpark.IGate;
 import bcccp.tickets.adhoc.IAdhocTicket;
 
+
 public class ExitController 
 		implements ICarSensorResponder,
 		           IExitController {
 	
 	private enum STATE { IDLE, WAITING, PROCESSED, REJECTED, TAKEN, EXITING, EXITED, BLOCKED } 
 	
+				   
 	private STATE state;
 	private STATE prevState;
 	private String message;
 	//private String prevMessage;
 	
+				   
 	private IGate exitGate;
 	private ICarSensor is;
 	private ICarSensor os; 
 	private IExitUI ui;
 	
+				   
 	private ICarpark carpark;
 	private IAdhocTicket  adhocTicket = null;
 	private long exitTime;
@@ -34,6 +39,7 @@ public class ExitController
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
+		
 		
 		this.carpark = carpark;
 		this.exitGate = exitGate;
@@ -50,12 +56,14 @@ public class ExitController
 	}
 
 	
+				   
 	
 	private void log(String message) {
 		System.out.println("ExitController : " + message);
 	}
 
 
+				   
 
 	@Override
 	public void carEventDetected(String detectorId, boolean carDetected) {
@@ -81,6 +89,7 @@ public class ExitController
 			}
 			break;
 			
+				
 		case WAITING: 
 		case PROCESSED: 
 			if (detectorId.equals(is.getId()) && !carDetected) {
