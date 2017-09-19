@@ -1,12 +1,14 @@
 package bcccp.carpark.exit;
 
 
+
 import bcccp.carpark.Carpark;
 import bcccp.carpark.ICarSensor;
 import bcccp.carpark.ICarSensorResponder;
 import bcccp.carpark.ICarpark;
 import bcccp.carpark.IGate;
 import bcccp.tickets.adhoc.IAdhocTicket;
+
 
 
 public class ExitController 
@@ -22,11 +24,13 @@ public class ExitController
 	//private String prevMessage;
 	
 				   
+				   
 	private IGate exitGate;
 	private ICarSensor is;
 	private ICarSensor os; 
 	private IExitUI ui;
 	
+		
 				   
 	private ICarpark carpark;
 	private IAdhocTicket  adhocTicket = null;
@@ -39,6 +43,7 @@ public class ExitController
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
+		
 		
 		
 		this.carpark = carpark;
