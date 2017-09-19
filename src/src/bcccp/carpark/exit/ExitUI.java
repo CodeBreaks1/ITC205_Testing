@@ -1,42 +1,43 @@
-package bcccp.carpark.exit;
+ package bcccp.carpark.exit;
 
-import java.awt.EventQueue;
+ import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.TitledBorder;
 
-import javax.swing.JTextField;
-import java.awt.Font;
-import java.awt.Toolkit;
+ import javax.swing.JFrame;
+ import javax.swing.JPanel;
+ import javax.swing.border.EmptyBorder;
+ import javax.swing.border.TitledBorder;
 
-import javax.swing.SwingConstants;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.Color;
-import javax.swing.UIManager;
+ import javax.swing.JTextField;
+ import java.awt.Font;
+ import java.awt.Toolkit;
 
-@SuppressWarnings("serial")
-public class ExitUI extends JFrame implements IExitUI {
+ import javax.swing.SwingConstants;
+ import javax.swing.JButton;
+ import java.awt.event.ActionListener;
+ import java.awt.event.ActionEvent;
+ import java.awt.Color;
+ import javax.swing.UIManager;
 
-	private JPanel contentPane;
-	private JTextField displayTextField;
-	private JTextField ticketReaderTextField;
-	private IExitController controller;
+ @SuppressWarnings("serial")
+ public class ExitUI extends JFrame implements IExitUI {
+
+	 private JPanel contentPane;
+	 private JTextField displayTextField;
+	 private JTextField ticketReaderTextField;
+	 private IExitController controller;
 
 	
 	
-	/**
+	 /**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					ExitUI frame = new ExitUI(100, 100);
-					frame.setVisible(true);
+	 public static void main(String[] args) {
+		 EventQueue.invokeLater(new Runnable() {
+			 public void run() {
+				 try {
+					 ExitUI frame = new ExitUI(100, 100);
+					 frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -49,7 +50,7 @@ public class ExitUI extends JFrame implements IExitUI {
 	/**
 	 * Create the frame.
 	 */
-	public ExitUI(int x, int y) {
+	 public ExitUI(int x, int y) {
 		setTitle("Exit Pillar UI");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(x, y, 340, 380);
