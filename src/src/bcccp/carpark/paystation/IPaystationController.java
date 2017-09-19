@@ -1,5 +1,6 @@
 package bcccp.carpark.paystation;
 
+
 public interface IPaystationController {
 	
 	public void ticketInserted(String barcode);
