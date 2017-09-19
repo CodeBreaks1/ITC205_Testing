@@ -51,34 +51,34 @@
 	 * Create the frame.
 	 */
 	 public ExitUI(int x, int y) {
-		setTitle("Exit Pillar UI");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(x, y, 340, 380);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		 setTitle("Exit Pillar UI");
+		 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		 setBounds(x, y, 340, 380);
+		 contentPane = new JPanel();
+		 contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		 setContentPane(contentPane);
+		 contentPane.setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setBorder(new TitledBorder(null, "LCD Display", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-		panel.setBounds(5, 5, 316, 106);
-		contentPane.add(panel);
-		panel.setLayout(null);
+		 JPanel panel = new JPanel();
+		 panel.setBorder(new TitledBorder(null, "LCD Display", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		 panel.setBounds(5, 5, 316, 106);
+		 contentPane.add(panel);
+		 panel.setLayout(null);
 		
-		displayTextField = new JTextField();
-		displayTextField.setHorizontalAlignment(SwingConstants.CENTER);
-		//displayTextField.setText("Push Button");
-		displayTextField.setFont(new Font("Tahoma", Font.PLAIN, 28));
-		displayTextField.setEditable(false);
-		displayTextField.setBounds(10, 15, 296, 82);
-		panel.add(displayTextField);
-		displayTextField.setColumns(10);
+		 displayTextField = new JTextField();
+		 displayTextField.setHorizontalAlignment(SwingConstants.CENTER);
+		 //displayTextField.setText("Push Button");
+		 displayTextField.setFont(new Font("Tahoma", Font.PLAIN, 28));
+		 displayTextField.setEditable(false);
+		 displayTextField.setBounds(10, 15, 296, 82);
+		 panel.add(displayTextField);
+		 displayTextField.setColumns(10);
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Ticket Reader", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
-		panel_1.setBounds(15, 115, 306, 153);
-		contentPane.add(panel_1);
-		panel_1.setLayout(null);
+		 JPanel panel_1 = new JPanel();
+		 panel_1.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Ticket Reader", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
+		 panel_1.setBounds(15, 115, 306, 153);
+		 contentPane.add(panel_1);
+		 panel_1.setLayout(null);
 		
 		ticketReaderTextField = new JTextField();
 		ticketReaderTextField.setHorizontalAlignment(SwingConstants.CENTER);
