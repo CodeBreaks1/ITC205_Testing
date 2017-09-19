@@ -285,10 +285,10 @@ public class ExitController
 			}
 		}
 		else {
-			ui.beep();
-			ui.discardTicket();
-			log("ticketInserted: called while in incorrect state");
-			setState(STATE.REJECTED);						
+			 ui.beep();
+			 ui.discardTicket();
+			 log("ticketInserted: called while in incorrect state");
+			 setState(STATE.REJECTED);						
 		}
 		
 	}
@@ -296,10 +296,10 @@ public class ExitController
 	
 	
 	@Override
-	public void ticketTaken() {
-		if (state == STATE.PROCESSED)  {
-			exitGate.raise();
-			setState(STATE.TAKEN);
+	 public void ticketTaken() {
+		 if (state == STATE.PROCESSED)  {
+			 exitGate.raise();
+			 setState(STATE.TAKEN);
 		}
 		else if (state == STATE.REJECTED) {
 			setState(STATE.WAITING);
