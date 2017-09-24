@@ -1,6 +1,5 @@
 package bcccp.carpark.entry;
 
-
 import bcccp.carpark.Carpark;
 import bcccp.carpark.ICarSensor;
 import bcccp.carpark.ICarSensorResponder;
@@ -48,7 +47,6 @@ public class EntryController
 		ui.registerController(this);
 		
 		setState(STATE.IDLE);
-		
 		
 	}
 
@@ -125,7 +123,6 @@ public class EntryController
 			
 		default: 
 			break;
-				
 			
 		}
 		
